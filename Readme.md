@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Александр Соломин](https://up.htmlacademy.ru/htmlcss/27/user/159441).
-* Наставник: [Екатерина Киреева] (https://htmlacademy.ru/profile/ekateric).
+* Наставник: [Екатерина Киреева](https://htmlacademy.ru/profile/ekateric).
 
 ---
 
