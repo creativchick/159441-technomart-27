@@ -10,7 +10,10 @@
         <a>
           <img src="img/icon/logo-technomart.svg" width="109" height="19" alt="Логотип сайта Техномарт">
         </a>
-        <!--Здесь будет форма поиска-->
+        <form action="" method="get">
+          <input type="search" name="search" id="search" placeholder="Поиск:">
+          <label class="search-label" for="search"></label>
+        </form>
         <ul>
           <li><a href="#" class="bookmark">Закладки:0</a></li>
           <li><a href="#" class="basket">Корзина:0</a></li>
@@ -292,9 +295,29 @@
             заехав в наш офис:
           </p>
           <a class="maps" href="#">
-            <img src="img/maps/map.png" width="300" height="158" alt="Расположение магазина на карте">
+            <img src="img/maps/map.png" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </a>
+          <section class="modal-map">
+            <img src="img/maps/map.jpg" width="940" height="446" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          </section>
           <a class="help-js" href="#">Заблудились? Напишите нам!</a>
+          <article class="help-form">
+            <form class="help" action="index.html" method="post">
+              <p>
+                <label for="appointment-name">Ваше имя:</label>
+                <input type="text" id="appointment-name" name="name" value="" placeholder="Имя Фамилия">
+              </p>
+              <p>
+                <label for="appointment-email">Ваше email:</label>
+                <input type="text" id="appointment-email" name="email" value="" placeholder="email@example.com">
+              </p>
+              <p>
+                <label for="appointment-letter">Ваше email:</label>
+                <textarea id="appointment-letter" name="letter" placeholder="В свободной форме"></textarea>
+              </p>
+              <button type="submit">Отправить</button>
+            </form>
+          </article>
         </div>
       </section>
     </main>
@@ -303,29 +326,25 @@
       <section class="container-top-footer">
         <div class="left-contact">
           <a>
-            <img src="img/icon/logo-technomart.svg" width="109" height="19" alt="Логотип сайта Техномарт">
+            <img src="img/icon/logo-technomart.svg" width="138" height="23" alt="Логотип сайта Техномарт">
           </a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             +7 (812) 555-05-55</p>
           </div>
           <div class="right-menu">
-            <div class="top-navigation">
-              <ul>
-              <li><a href="">Компания</a></li>
-              <li><a href="">Новости</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
-              <li><a href="">Доставка</a></li>
-              <li><a href="">Контакты</a></li>
+            <ul class="top-navigation">
+             <li><a href="">Компания</a></li>
+             <li><a href="">Новости</a></li>
+             <li><a href="catalog.html">Каталог</a></li>
+             <li><a href="">Доставка</a></li>
+             <li><a href="">Контакты</a></li>
             </ul>
-            </div>
-            <div class="bottom-navigation">
-              <ul>
-              <li><a href="">Материалы</a></li>
-              <li><a href="">Техника</a></li>
-              <li><a href="">Инструмент</a></li>
-              <li><a href="">Спецпредложения</a></li>
-            </ul>
-            </div>
+            <ul class="bottom-navigation">
+             <li><a href="">Материалы</a></li>
+             <li><a href="">Техника</a></li>
+             <li><a href="">Инструмент</a></li>
+             <li><a href="">Спецпредложения</a></li>
+           </ul>
           </div>
         </section>
 
@@ -334,9 +353,9 @@
             <p class="copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
             <p class="footer-social">
               <ul>
-              <li><a class="social-btn-vk" href="#">вконтакте</a></li>
-              <li><a class="social-btn-fb" href="#">фейсбук</a></li>
-              <li><a class="social-btn-inst" href="#">инстаграмм</a></li>
+              <li><a class="social-btn-vk" href="#" aria-label="ВКонтакте"></a></li>
+              <li><a class="social-btn-fb" href="#" aria-label="Фейсбук"></a></li>
+              <li><a class="social-btn-inst" href="#" aria-label="Инстаграмм"></a></li>
             </ul>
             </p>
             <p class="communication">Обратная связь: <a href="mailto:mail@htmlacademy.ru" target="_blank">mail@htmlacademy.ru</a></p>
