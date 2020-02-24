@@ -10,7 +10,11 @@
       <a href="index.html">
         <img src="img/icon/logo-technomart.svg" width="109" height="19" alt="Логотип сайта Техномарт">
       </a>
-      <!--Здесь будет форма поиска-->
+      <form action="" method="get">
+       <label class="visually-hidden" for="search">Поиск по сайту</label>
+       <input type="submit" class="search-button">
+       <input type="search" name="search-site" id="search" placeholder="Поиск:">
+      </form>
       <ul>
         <li><a href="#" class="bookmark">Закладки:0</a></li>
         <li><a href="#" class="basket">Корзина:0</a></li>
@@ -60,6 +64,60 @@
       <h1 class="page-title">Перфораторы</h1>
       <aside class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
+        <p>Фильтр:</p>
+        <form class="filter" action="index.html" method="get">
+          <fieldset>
+            <legend>Цена:</legend>
+          <label for="price-min">
+            0
+            <input type="text" id="price-min" name="min-price">
+          </label>
+          <label for="price-max">
+            30000
+            <input type="text" id="price-max" name="max-price">
+          </label>
+          <div class="slider-price"></div>
+         </fieldset>
+         <fieldset>
+           <legend>Производители:</legend>
+           <ul>
+             <li class="filter-option">
+               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+               <label for="filter-bosch">Bosch</label>
+             </li>
+             <li class="filter-option">
+               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+               <label for="filter-interskol">Интерскол</label>
+             </li>
+             <li class="filter-option">
+               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+               <label for="filter-makita">Makita</label>
+             </li>
+             <li class="filter-option">
+               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+               <label for="filter-dewalt">DeWalt</label>
+             </li>
+             <li class="filter-option">
+               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+               <label for="filter-hitachi">Hitachi</label>
+             </li>
+           </ul>
+         </fieldset>
+         <fieldset>
+           <legend>Питание:</legend>
+           <ul>
+             <li class="filter-option">
+               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="battary" id="filter-battary" checked>
+               <label for="filter-battary">Аккумуляторные</label>
+             </li>
+             <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="network" id="filter-network">
+               <label for="filter-network">Сетевые</label>
+             </li>
+           </ul>
+         </fieldset>
+         <button type="submit" class="filter-button" name="button">Показать</button>
+        </form>
       </aside>
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка товаров</h2>
@@ -92,15 +150,6 @@
             </p>
             <button type="button">Купить</button>
             <button type="button">В закладки</button>
-            <article class="modal-add-product">
-              <p class="icon-success"></p>
-              <p>Товар добавлен в корзину!</p>
-              <button class="modal-content-close-buy" type="button"></button>
-              <ul class="add-product">
-                <li><a class="btn active-btn" href="">Оформить заказ</a></li>
-                <li><a class="btn" href="catalog.html">Продолжить Покупки</a></li>
-              </ul>
-            </article>
           </li>
           <li class="catalog-item">
             <h3 class="product-name">
@@ -119,15 +168,6 @@
             </p>
             <button type="button">Купить</button>
             <button type="button">В закладки</button>
-            <article class="modal-add-product">
-              <p class="icon-success"></p>
-              <p>Товар добавлен в корзину!</p>
-              <button class="modal-content-close-buy" type="button"></button>
-              <ul class="add-product">
-                <li><a class="btn active-btn" href="">Оформить заказ</a></li>
-                <li><a class="btn" href="catalog.html">Продолжить Покупки</a></li>
-              </ul>
-            </article>
           </li>
           <li class="catalog-item">
             <h3 class="product-name">
@@ -161,15 +201,6 @@
             </p>
             <button type="button">Купить</button>
             <button type="button">В закладки</button>
-            <article class="modal-add-product">
-              <p class="icon-success"></p>
-              <p>Товар добавлен в корзину!</p>
-              <button class="modal-content-close-buy" type="button"></button>
-              <ul class="add-product">
-                <li><a class="btn active-btn" href="">Оформить заказ</a></li>
-                <li><a class="btn" href="catalog.html">Продолжить Покупки</a></li>
-              </ul>
-            </article>
           </li>
           <li class="catalog-item">
             <h3 class="product-name">
@@ -188,15 +219,6 @@
             </p>
             <button type="button">Купить</button>
             <button type="button">В закладки</button>
-            <article class="modal-add-product">
-              <p class="icon-success"></p>
-              <p>Товар добавлен в корзину!</p>
-              <button class="modal-content-close-buy" type="button"></button>
-              <ul class="add-product">
-                <li><a class="btn active-btn" href="">Оформить заказ</a></li>
-                <li><a class="btn" href="catalog.html">Продолжить Покупки</a></li>
-              </ul>
-            </article>
           </li>
           <li class="catalog-item">
             <h3 class="product-name">
@@ -212,15 +234,6 @@
             </p>
             <button type="button">Купить</button>
             <button type="button">В закладки</button>
-            <article class="modal-add-product">
-              <p class="icon-success"></p>
-              <p>Товар добавлен в корзину!</p>
-              <button class="modal-content-close-buy" type="button"></button>
-              <ul class="add-product">
-                <li><a class="btn active-btn" href="">Оформить заказ</a></li>
-                <li><a class="btn" href="catalog.html">Продолжить Покупки</a></li>
-              </ul>
-            </article>
           </li>
           <li class="catalog-item">
             <h3 class="product-name">
@@ -239,15 +252,6 @@
             </p>
             <button type="button">Купить</button>
             <button type="button">В закладки</button>
-            <article class="modal-add-product">
-              <p class="icon-success"></p>
-              <p>Товар добавлен в корзину!</p>
-              <button class="modal-content-close-buy" type="button"></button>
-              <ul class="add-product">
-                <li><a class="btn active-btn" href="">Оформить заказ</a></li>
-                <li><a class="btn" href="catalog.html">Продолжить Покупки</a></li>
-              </ul>
-            </article>
           </li>
           <li class="catalog-item">
             <h3 class="product-name">
@@ -266,15 +270,6 @@
             </p>
             <button type="button">Купить</button>
             <button type="button">В закладки</button>
-            <article class="modal-add-product">
-              <p class="icon-success"></p>
-              <p>Товар добавлен в корзину!</p>
-              <button class="modal-content-close-buy" type="button"></button>
-              <ul class="add-product">
-                <li><a class="btn active-btn" href="">Оформить заказ</a></li>
-                <li><a class="btn" href="catalog.html">Продолжить Покупки</a></li>
-              </ul>
-            </article>
           </li>
           <li class="catalog-item">
             <h3 class="product-name">
@@ -290,15 +285,6 @@
             </p>
             <button type="button">Купить</button>
             <button type="button">В закладки</button>
-            <article class="modal-add-product">
-              <p class="icon-success"></p>
-              <p>Товар добавлен в корзину!</p>
-              <button class="modal-content-close-buy" type="button"></button>
-              <ul class="add-product">
-                <li><a class="btn active-btn" href="">Оформить заказ</a></li>
-                <li><a class="btn" href="catalog.html">Продолжить Покупки</a></li>
-              </ul>
-            </article>
           </li>
         </ul>
       </section>
@@ -350,19 +336,26 @@
      </div>
    </section>
 
-     <section class="bottom-footer">
-       <div class="container">
-         <p class="copyright">© 2010–2016 Компания «Техномарт» Все права защищены</p>
-          <ul>
-            <li><a class="social-btn-vk" href="#" aria-label="ВКонтакте"></a></li>
-            <li><a class="social-btn-fb" href="#" aria-label="Фейсбук"></a></li>
-            <li><a class="social-btn-inst" href="#" aria-label="Инстаграмм"></a></li>
-          </ul>
-         <p class="communication">Обратная связь: <a href="mailto:mail@htmlacademy.ru" target="_blank">mail@htmlacademy.ru</a></p>
-         <p class="footer-copyright">Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a></p>
-       </div>
-     </section>
-
+   <section class="bottom-footer">
+     <div class="container">
+       <p class="copyright">© 2010–2016 Компания «Техномарт» Все права защищены</p>
+       <ul>
+         <li><a class="social-btn-vk" href="#" aria-label="ВКонтакте"></a></li>
+         <li><a class="social-btn-fb" href="#" aria-label="Фейсбук"></a></li>
+         <li><a class="social-btn-inst" href="#" aria-label="Инстаграмм"></a></li>
+       </ul>
+       <p class="communication">Обратная связь: <a href="mailto:mail@htmlacademy.ru" target="_blank">mail@htmlacademy.ru</a></p>
+       <p class="footer-copyright">Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a></p>
+     </div>
+   </section>
   </footer>
+  <article class="modal-add-product">
+    <p>Товар добавлен в корзину!</p>
+    <ul class="add-product">
+      <li><a class="btn active-btn" href="">Оформить заказ</a></li>
+      <li><a class="btn" href="catalog.html">Продолжить Покупки</a></li>
+    </ul>
+    <button class="modal-content-close-buy" type="button"></button>
+  </article>
 </body>
 </html>
